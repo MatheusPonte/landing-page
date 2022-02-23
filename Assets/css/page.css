@@ -1,0 +1,244 @@
+                                                .intro-content {
+                                                    position: relative;
+                                                    top: -8rem;
+                                                    display: grid;
+                                                    grid-template-columns: 1fr 1.5fr;
+                                                    gap: var(--gap);
+                                                    min-height: 100vh;
+                                                }
+                                                
+                                                .intro-text-content,
+                                                .intro-video,
+                                                .intro-img {
+                                                    display: flex;
+                                                    flex-flow: column wrap;
+                                                    justify-content: center;
+                                                }
+                                                
+                                                .intro-video {
+                                                    max-width: 100%;
+                                                    height: 100%;
+                                                    padding-left: 10rem;
+                                                }
+                                                
+                                                .sobre-nos {
+                                                    max-width: 64rem;
+                                                    height: 100vh;
+                                                    display: flex;
+                                                    /* flex-flow: column wrap; */
+                                                    flex-wrap: nowrap;
+                                                    flex-direction: column;
+                                                    justify-content: center;
+                                                    text-align: center;
+                                                    min-height: 100vh;
+                                                }
+                                                
+                                                .categorias-grid {
+                                                    min-height: 100vh;
+                                                    display: flex;
+                                                    flex-flow: column wrap;
+                                                    justify-content: center;
+                                                }
+                                                
+                                                .espaco {
+                                                    padding-bottom: 5rem;
+                                                }
+                                                
+                                                .grid {
+                                                    display: grid;
+                                                    grid-template-columns: repeat(3, 1fr);
+                                                    gap: var(--gap);
+                                                    counter-reset: grid-counter;
+                                                }
+                                                
+                                                .grid h4 {
+                                                    position: relative;
+                                                    padding-left: 5rem;
+                                                    padding-bottom: 2rem;
+                                                }
+                                                
+                                                .grid h4::before {
+                                                    counter-increment: grid-counter;
+                                                    content: counter(grid-counter);
+                                                    position: absolute;
+                                                    font-size: 5rem;
+                                                    font-style: italic;
+                                                    top: -3rem;
+                                                    left: 0rem;
+                                                    transform: rotate(15deg);
+                                                }
+                                                
+                                                .clips {
+                                                    width: 40rem;
+                                                    max-width: 40rem;
+                                                    max-height: 40rem;
+                                                    overflow: hidden;
+                                                    height: 26rem;
+                                                }
+                                                
+                                                .clips video {
+                                                    border-radius: 200rem;
+                                                    box-shadow: 10px 10px 10px black;
+                                                    transition: all 300ms ease-in-out;
+                                                    z-index: 3;
+                                                }
+                                                
+                                                .clips video:hover {
+                                                    transform: scale(0.9) rotate(2deg);
+                                                    box-shadow: 0 0 10px 5px red;
+                                                }
+                                                
+                                                .intro-img img {
+                                                    max-width: 100%;
+                                                    height: auto;
+                                                }
+                                                
+                                                .contact {
+                                                    grid-column: span 2;
+                                                }
+                                                
+                                                .contact .form-group {
+                                                    border: none;
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    flex-wrap: wrap;
+                                                    gap: var(--gap)
+                                                }
+                                                
+                                                .form-group legend {
+                                                    font-style: italic;
+                                                    font-size: 1.6rem;
+                                                    margin-bottom: 2rem;
+                                                }
+                                                
+                                                .form {
+                                                    flex: 1 1 320px;
+                                                }
+                                                
+                                                .form label {
+                                                    display: block;
+                                                    margin-bottom: 1rem;
+                                                }
+                                                
+                                                .form input,
+                                                .form textarea {
+                                                    border: none;
+                                                    background: var(--white-color);
+                                                    padding: 1.5rem 2rem;
+                                                    width: 100%;
+                                                    font-size: 2rem;
+                                                }
+                                                
+                                                .form input:focus,
+                                                .form textarea:focus {
+                                                    box-shadow: 0px 0px 15px 2px var(--secondary-color);
+                                                }
+                                                
+                                                .form button {
+                                                    border: 0.5rem solid var(--white-color);
+                                                    background: none;
+                                                    color: var(--white-color);
+                                                    padding: 1.5rem 2rem;
+                                                    font-size: 2rem;
+                                                    cursor: pointer;
+                                                    transition: all 300ms ease-in-out;
+                                                }
+                                                
+                                                .form button:hover {
+                                                    border: 0.5rem solid red;
+                                                    background: var(--white-color);
+                                                    color: var(--primary-color);
+                                                    box-shadow: 0px 0px 15px 2px var(--white-color)
+                                                }
+                                                
+                                                .footer {
+                                                    font-style: italic;
+                                                    font-size: 3rem;
+                                                    text-align: center;
+                                                }
+                                                
+                                                .footer p {
+                                                    margin: 0;
+                                                    padding: 3rem;
+                                                }
+                                                
+                                                .close-menu {
+                                                    display: none;
+                                                }
+                                                
+                                                @media(max-width: 800px) {
+                                                    .intro-content,
+                                                    .grid {
+                                                        grid-template-columns: 1fr;
+                                                    }
+                                                    .clips {
+                                                        width: 100%;
+                                                        max-width: 100%;
+                                                        max-height: 100%;
+                                                    }
+                                                    .clips video {
+                                                        width: 100%;
+                                                    }
+                                                    .categorias-grid {
+                                                        display: block;
+                                                    }
+                                                    .main-content {
+                                                        width: 100%;
+                                                    }
+                                                    .menu {
+                                                        background: var(--white-color);
+                                                        bottom: 0;
+                                                    }
+                                                    .menu-content,
+                                                    .menu-content ul {
+                                                        flex-direction: column;
+                                                        justify-content: center;
+                                                    }
+                                                    .menu-content {
+                                                        height: 100vh;
+                                                    }
+                                                    .menu {
+                                                        display: none;
+                                                    }
+                                                    .close-menu-label::after {
+                                                        content: '≡';
+                                                        position: fixed;
+                                                        z-index: 4;
+                                                        top: 1rem;
+                                                        right: 1rem;
+                                                        background: var(--primary-color);
+                                                        color: var(--white-color);
+                                                        font-size: 3rem;
+                                                        line-height: 3rem;
+                                                        width: 3rem;
+                                                        height: 3rem;
+                                                        text-align: center;
+                                                        padding: 0.5rem;
+                                                        cursor: pointer;
+                                                    }
+                                                    .close-menu:checked~.menu {
+                                                        display: block;
+                                                    }
+                                                    .close-menu:checked~.close-menu-label::after {
+                                                        content: '✕';
+                                                    }
+                                                    .menu-spacing {
+                                                        display: none;
+                                                    }
+                                                    .back-to-top {
+                                                        content: '';
+                                                        position: fixed;
+                                                        bottom: 3rem;
+                                                        right: 2rem;
+                                                        background: var(--white-color);
+                                                        width: 3rem;
+                                                        height: 3rem;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        font-size: 2rem;
+                                                        border: 0.1rem solid black;
+                                                        border-radius: 50%;
+                                                        color: black;
+                                                    }
+                                                }

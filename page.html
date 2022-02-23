@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina</title>
+    <link rel="stylesheet" href="Assets/css/variables.css">
+    <link rel="stylesheet" href="Assets/css/elements.css">
+    <link rel="stylesheet" href="Assets/css/classes.css">
+    <link rel="stylesheet" href="Assets/css/menu.css">
+    <link rel="stylesheet" href="Assets/css/page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="main-bg">
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked= false;" id="home">
+                <a href="#intro">home</a>
+            </h1>
+            <nav>
+                <ul onclick="getElementById('close-menu').checked= false;">
+                    <li>
+                        <a href="#sobre">sobre</a></li>
+                    <li>
+                        <a href="#categorias">categorias</a></li>
+                    <li><a href="#videos">videos</a></li>
+                    <li> <a href="#Contato">contato</a></li>
+                    <li>
+                        <a href="#">login</a></li>
+                    <li>
+                        <a href="#">registro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="menu-spacing"></div>
+
+    <section id="intro" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Bem vindo a nova plataforma</h2>
+                <p>Nova plataforma de compartilhar suas gameplays, highlights entre diversars outras coisas, aqui você pode publicar para todo o seus seguidores ver!
+                </p>
+            </div>
+            <div class="intro-video">
+                <h1>Valorant</h1>
+                <video width="400" height="240" autoplay loop muted>
+                    <source src="../Landing page/Assets/vids/insrta.mp4" type="video/mp4">
+                </video>
+            </div>
+
+    </section>
+    <section id="sobre" class="white-bg section">
+        <div class="main-content sobre-nos">
+            <h2>SOBRE NÓS</h2>
+            <p>Plataforma pensada e criada voltada para o publico gamer, onde deseja botar suas gameplays editadas, compartilhar com os amigos sem ter que se preocupar com sua outra rede social.
+
+            </p>
+
+            <p>Ela também pode ser usada para armazenar videos e fotos, como uma pasta para você nunca perde-las</p>
+
+            <p>venha já para nova plataforma de videos e entretenimento.</p>
+        </div>
+
+
+    </section>
+
+    <section id="categorias" class="categorias main-bg section">
+        <div class="main-content categorias-grid">
+            <h2 calss="categoria-espaco">Categorias</h2>
+            <p class="espaco">Modos de uso:</p>
+            <div class="grid">
+                <article>
+                    <h4>Highlights</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit atque, eos consequuntur ipsa tempore eveniet vero beatae et culpa aliquid voluptatum! Possimus quisquam, quam eligendi recusandae accusantium reiciendis illum
+                        incidunt?
+                    </p>
+                </article>
+                <article>
+                    <h4>Fotos</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit atque, eos consequuntur ipsa tempore eveniet vero beatae et culpa aliquid voluptatum! Possimus quisquam, quam eligendi recusandae accusantium reiciendis illum
+                        incidunt?
+                    </p>
+                </article>
+                <article>
+                    <h4>Videos gerais</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit atque, eos consequuntur ipsa tempore eveniet vero beatae et culpa aliquid voluptatum! Possimus quisquam, quam eligendi recusandae accusantium reiciendis illum
+                        incidunt?
+                    </p>
+                </article>
+            </div>
+
+        </div>
+    </section>
+    <section id="videos" class="categorias white-bg section">
+        <div class="main-content categorias-grid">
+            <h2 calss="categoria-espaco">Sala de clipes</h2>
+            <p class="espaco">Modos de uso:</p>
+            <div class="grid">
+                <div class="clips">
+                    <video width="360" height="240" autoplay loop muted>
+                        <source src="../Landing page/Assets/vids/oi.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="clips">
+                    <video width="360" height="240" autoplay loop muted>
+                        <source src="/Landing page/Assets/vids/link.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="clips">
+                    <video width="360" height="240" autoplay loop muted>
+                        <source src="/Landing page/Assets/vids/Untitled.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="clips">
+                    <video width="360" height="240" autoplay loop muted>
+                        <source src="/Landing page/Assets/vids/NICE.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="clips">
+                    <video width="360" height="240" autoplay loop muted>
+                        <source src="/Landing page/Assets/vids/fdp.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="clips">
+                    <video width="360" height="240" autoplay loop muted>
+                        <source src="/Landing page/Assets/vids/ASD.mp4" type="video/mp4">
+                    </video>
+                </div>
+    </section>
+
+    <section id="preco" class="main-bg section">
+        <div class="main-content sobre-nos">
+            <h2>preços:</h2>
+            <p>Plataforma pensada e criada voltada para o publico gamer, onde deseja botar suas gameplays editadas, compartilhar com os amigos sem ter que se preocupar com sua outra rede social.
+
+            </p>
+
+            <p>Ela também pode ser usada para armazenar videos e fotos, como uma pasta para você nunca perde-las</p>
+            <div class="response">
+                <table>
+                    <caption>Tabelas de preço</caption>
+                    <thead>
+                        <tr>
+                            <th>titulo 1</th>
+                            <th>titulo 2</th>
+                            <th>titulo 3</th>
+                            <th>titulo 4</th>
+                            <th>titulo 5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>conteudo 1</td>
+                            <td>conteudo 2</td>
+                            <td>conteudo 3</td>
+                            <td>conteudo 3</td>
+                            <td>conteudo 3</td>
+                        </tr>
+                        <tr>
+                            <td>conteudo 1</td>
+                            <td>conteudo 2</td>
+                            <td>conteudo 3</td>
+                            <td>conteudo 3</td>
+                            <td>conteudo 3</td>
+                        </tr>
+                        <tr>
+                            <td>conteudo 1</td>
+                            <td>conteudo 2</td>
+                            <td>conteudo 3</td>
+                            <td>conteudo 3</td>
+                            <td>conteudo 3</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="5"> testando
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="Contato" class="intro contato-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Bem vindo a nova plataforma</h2>
+                <p>Nova plataforma de compartilhar suas gameplays, highlights entre diversars outras coisas, aqui você pode publicar para todo o seus seguidores ver!
+                </p>
+            </div>
+            <div class="intro-img">
+                <img src="../Landing page/Assets/img/undraw_new_message_re_fp03.svg">
+            </div>
+            <div class="contact">
+                <fieldset class="form-group">
+                    <legend>Contact me</legend>
+                    <div class="form">
+                        <label for="primeiro-nome"> Primeiro Nome</label>
+                        <input type="text" name="primeiro-nome" id="primeiro-nome" placeholder="Seu primeiro nome">
+                    </div>
+                    <div class="form">
+                        <label for="ultimo-nome"> Ultimo Nome</label>
+                        <input type="text" name="ultimo-nome" id="ultimo-nome" placeholder="seu ultimo nome">
+                    </div>
+                    <div class="form">
+                        <label for="email"> Seu email</label>
+                        <input type="email" name="email" id="email" placeholder="seu email">
+                    </div>
+                    <div class="form full-late">
+                        <label for="message"> Escreva sobre:</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="fala sobre voce"></textarea>
+                    </div>
+                    <div class="form full-late">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </fieldset>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="footer" class="footer contato-bg">
+        <p>
+            Feito por:
+            <a rel="nofollow" target="_blank" href="#">Matheus Ponte</a></a>
+        </p>
+    </footer>
+
+    <a class="back-to-top" href="#">↑</a>
+
+
+</body>
+
+</html>
